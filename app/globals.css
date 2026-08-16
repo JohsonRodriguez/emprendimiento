@@ -140,3 +140,8 @@ footer{margin-top:0}
 @media(max-width:420px){.logo{gap:.55rem}.logo .brand-mark{width:30px;height:30px}}
 .redirect-page{min-height:100dvh;display:grid;place-content:center;gap:.75rem;text-align:center}.redirect-page p{margin:0;color:var(--muted)}.redirect-page a{color:var(--accent);font-weight:650;text-decoration:underline;text-underline-offset:4px}
 .result-core span{font-family:var(--font-urbanist),sans-serif;font-size:1.05rem;font-weight:500;letter-spacing:0}.result-brand-mark{width:54px;height:54px;object-fit:contain}.result-core{gap:.45rem}@media(max-width:767px){.result-brand-mark{width:44px;height:44px}.result-core span{font-size:.95rem}}
+
+/* Full-bleed Tueny footer: deep charcoal resolving into the brand green. */
+footer{max-width:none;padding-left:max(var(--gutter),calc((100vw - var(--container))/2 + var(--gutter)));padding-right:max(var(--gutter),calc((100vw - var(--container))/2 + var(--gutter)));background:linear-gradient(118deg,#070a09 0%,#0b1713 44%,#0f7156 125%);color:#fff;border-top:0}
+footer>div>p{color:rgba(255,255,255,.74)}footer nav{color:rgba(255,255,255,.86)}footer nav a:hover{color:#fff}.footer-meta{color:rgba(255,255,255,.66);border-color:rgba(255,255,255,.18)}.footer-logo{color:#fff}
+@media(max-width:767px){footer{padding-left:1.25rem;padding-right:1.25rem;background:linear-gradient(145deg,#070a09 0%,#0a1a14 55%,#0f7156 145%)}}
