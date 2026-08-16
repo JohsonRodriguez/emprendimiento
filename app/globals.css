@@ -158,3 +158,7 @@ footer>div>p{color:rgba(255,255,255,.74)}footer nav{color:rgba(255,255,255,.86)}
 /* Compact editorial rhythm: related items stay tight while major groups remain distinct. */
 .problem-item,.problem-item:hover{padding-top:1.3rem;padding-bottom:1.45rem}.service,.service:hover,.service-0,.service-6{padding-top:1.25rem;padding-bottom:1.25rem}.process-step{padding-top:1.9rem;padding-bottom:1.9rem}.why-item{padding-top:2rem;padding-bottom:2rem}.bilingual-section{gap:clamp(2.5rem,5vw,5rem)}.why-section{gap:clamp(3rem,6vw,6rem)}.contact-section{gap:clamp(3rem,7vw,6.5rem)}.cta-section{padding:clamp(3.5rem,6vw,6rem)}footer{padding-top:3.75rem;padding-bottom:2.5rem;gap:3rem}
 @media(max-width:767px){.problem-item,.problem-item:hover,.service,.service:hover,.service-0,.service-6{padding-top:1.1rem;padding-bottom:1.2rem}.process-step,.why-item{padding-top:1.5rem;padding-bottom:1.5rem}.bilingual-section,.why-section,.contact-section{gap:2.5rem}.cta-section{padding:3rem 1.5rem}footer{padding-top:3rem;padding-bottom:2rem;gap:2rem}}
+
+/* Keep the before/after story close to the problem and solution sections. */
+.compare-section{padding-top:3.25rem;padding-bottom:3.25rem}
+@media(max-width:767px){.compare-section{padding-top:2.75rem;padding-bottom:2.75rem}}
