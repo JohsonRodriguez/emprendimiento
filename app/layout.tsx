@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({ subsets: ["latin"], display: "swap", variable: "--font-manrope" });
+const geist = Geist({ subsets: ["latin"], display: "swap", variable: "--font-geist" });
+const geistMono = Geist_Mono({ subsets: ["latin"], display: "swap", variable: "--font-geist-mono" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://johsonrodriguez.github.io/emprendimiento/"),
@@ -12,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es" className={manrope.variable}><body>{children}</body></html>;
+  return <html lang="es" className={`${geist.variable} ${geistMono.variable}`}><body>{children}</body></html>;
 }
