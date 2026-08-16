@@ -139,3 +139,4 @@ footer{margin-top:0}
 .logo .brand-mark{width:34px;height:34px;object-fit:contain;flex:none}
 .footer-logo{font-size:1.18rem}
 @media(max-width:420px){.logo{gap:.55rem}.logo .brand-mark{width:30px;height:30px}}
+.redirect-page{min-height:100dvh;display:grid;place-content:center;gap:.75rem;text-align:center}.redirect-page p{margin:0;color:var(--muted)}.redirect-page a{color:var(--accent);font-weight:650;text-decoration:underline;text-underline-offset:4px}
