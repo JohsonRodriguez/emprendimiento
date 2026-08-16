@@ -54,3 +54,14 @@ body{font-kerning:normal;text-rendering:optimizeLegibility}
 footer{padding-top:5rem;padding-bottom:3rem}
 
 @media(max-width:767px){.section{padding-top:6.5rem;padding-bottom:6.5rem}.hero h1{font-size:clamp(2.65rem,12vw,3.8rem)}.section-heading{margin-bottom:3.5rem}.problem-item,.service{min-height:150px}.service-0{min-height:300px;padding:1.5rem}.project-info h3{font-size:2rem}.results-orbit{gap:.45rem}.result-chip{min-height:48px}.cta-section{padding:3.5rem 1.5rem}}
+
+/* Interaction system: one motion language for press, hover, menus, and focus. */
+:root{--ease-out:cubic-bezier(.23,1,.32,1);--ease-in-out:cubic-bezier(.77,0,.175,1);--ease-drawer:cubic-bezier(.32,.72,0,1)}
+.button,.menu-button,.demo-bar button,.demo-content button{transition:transform 150ms var(--ease-out),background-color 180ms ease,color 180ms ease,border-color 180ms ease}
+.button:active,.menu-button:active,.demo-bar button:active,.demo-content button:active{transform:scale(.97)}
+.primary:hover{transform:none}.text-link,.desktop-nav a,footer a{transition:transform 180ms var(--ease-out),color 180ms ease,border-color 180ms ease}
+.menu-button{width:42px;height:42px;border-radius:3px;color:var(--ink);cursor:pointer;transition:transform 150ms var(--ease-out),background-color 180ms ease}
+.mobile-nav{transform-origin:top right;will-change:transform,opacity}.mobile-nav a:not(.button){border-radius:3px;transition:transform 160ms var(--ease-out),background-color 180ms ease,color 180ms ease}
+.button:focus-visible,.menu-button:focus-visible,.demo-bar button:focus-visible,.demo-content button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(hover:hover) and (pointer:fine){.button:hover{transform:translateY(-1px)}.text-link:hover,.desktop-nav a:hover,footer a:hover{transform:translateY(-1px)}.menu-button:hover,.mobile-nav a:not(.button):hover{background:var(--surface-2)}.demo-bar button:hover,.demo-content button:hover{transform:translateY(-1px)}}
+@media(prefers-reduced-motion:reduce){.button,.menu-button,.demo-bar button,.demo-content button,.text-link,.desktop-nav a,footer a,.mobile-nav a{transition-property:color,background-color,border-color!important}}
