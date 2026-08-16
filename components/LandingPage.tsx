@@ -6,6 +6,7 @@ import { assetPath } from "@/lib/assets";
 import { Navbar } from "./Navbar"; import { Reveal } from "./Reveal"; import { BeforeAfterSlider } from "./BeforeAfterSlider"; import { BilingualDemo } from "./BilingualDemo"; import { ContactForm } from "./ContactForm";
 
 const serviceIcons=[PaintBrush,Wrench,GlobeHemisphereWest,DeviceMobile,MagnifyingGlass,Gauge,ShieldCheck];
+const showProjectsCta=false;
 export function LandingPage({locale}:{locale:Locale}){const d=dictionaries[locale]; return <>
   <Navbar locale={locale} d={d}/><main id="top">
     <section className="hero"><div className="hero-copy"><Reveal><p className="eyebrow">{d.heroKicker}</p><h1>{d.heroTitle}</h1><p className="hero-body">{d.heroBody}</p><div className="hero-actions"><a className="button primary" href="#contact">{d.heroPrimary}<ArrowRight size={18}/></a><a className="text-link" href="#before-after">{d.heroSecondary}<ArrowDownRight size={18}/></a></div></Reveal></div><Reveal className="hero-visual" delay={.12}><div className="hero-image"><Image src={assetPath("/images/hero-transformation.png")} alt="Laptop comparing an outdated website with its modern redesign" fill priority sizes="(max-width: 900px) 100vw, 56vw"/></div><div className="transform-caption"><span>{d.before}</span><i/><strong>{d.after}</strong></div></Reveal></section>
@@ -25,7 +26,7 @@ export function LandingPage({locale}:{locale:Locale}){const d=dictionaries[local
 
     <section className="section results-section"><Reveal><h2>{d.resultsTitle}</h2></Reveal><div className="results-orbit"><div className="result-core"><Browser size={36}/><span>Nueva Web</span></div>{d.results.map((x,i)=><Reveal className={`result-chip chip-${i}`} delay={i*.04} key={x}><Check size={17}/>{x}</Reveal>)}</div></section>
 
-    <section className="section cta-section"><Reveal><h2>{d.ctaTitle}</h2><p>{d.ctaBody}</p><div><a className="button light" href="#contact">{d.ctaPrimary}<ArrowRight size={18}/></a><a className="text-link light-link" href="#work">{d.ctaSecondary}<ArrowDownRight size={18}/></a></div></Reveal></section>
+    <section className="section cta-section"><Reveal><h2>{d.ctaTitle}</h2><p>{d.ctaBody}</p><div><a className="button light" href="#contact">{d.ctaPrimary}<ArrowRight size={18}/></a>{showProjectsCta&&<a className="text-link light-link" href="#work">{d.ctaSecondary}<ArrowDownRight size={18}/></a>}</div></Reveal></section>
 
     <section className="section contact-section" id="contact"><Reveal className="contact-copy"><h2>{d.contactTitle}</h2><p>{d.contactBody}</p><a href="mailto:hello@nuevaweb.studio">hello@nuevaweb.studio</a></Reveal><Reveal className="contact-form-wrap" delay={.08}><ContactForm d={d}/></Reveal></section>
   </main><footer><div><Link href={`/${locale}`} className="logo footer-logo"><span>N</span>Nueva Web</Link><p>{d.footer}</p></div><nav>{d.nav.slice(1).map((x,i)=><a key={x} href={`#${["services","process","before-after","work","contact"][i]}`}>{x}</a>)}</nav><div className="footer-meta"><span>© {new Date().getFullYear()} Nueva Web. {d.rights}</span><span><a href="#">{d.privacy}</a><a href="#">{d.terms}</a><Link href={locale==="es"?"/en":"/es"}>{locale==="es"?"English":"Español"}</Link></span></div></footer>
