@@ -21,3 +21,5 @@ footer{max-width:1280px;margin:4rem auto 0;padding:4rem 3.5rem 2rem;border-top:1
 
 /* The old laptop image is clipped above the redesigned image, preserving exact alignment. */
 .compare .old-overlay{clip-path:inset(0 calc(100% - var(--pos)) 0 0);filter:grayscale(.18) contrast(.92)}
+
+.demo-stage{display:grid}.demo-stage>.demo-content{grid-area:1/1}
