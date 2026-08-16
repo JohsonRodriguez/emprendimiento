@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function sitemap(): MetadataRoute.Sitemap { return ["es", "en"].map((locale) => ({ url: `https://nuevaweb.studio/${locale}`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 1 })); }
