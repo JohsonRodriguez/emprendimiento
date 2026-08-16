@@ -1,2 +1,4 @@
 import { redirect } from "next/navigation";
-export default function Home() { redirect("/es"); }
+import { assetPath } from "@/lib/assets";
+
+export default function Home() { redirect(`${assetPath("/en")}/`); }
