@@ -16,7 +16,7 @@ export function LandingPage({locale}:{locale:Locale}){const d=dictionaries[local
 
     <section className="section compare-section" id="before-after"><Reveal className="section-heading compact"><p className="eyebrow">Before / After</p><h2>{d.beforeTitle}</h2><p>{d.beforeBody}</p></Reveal><Reveal><BeforeAfterSlider before={d.before} after={d.after} drag={d.drag}/></Reveal></section>
 
-    <section className="section services-section" id="services"><Reveal className="section-heading"><h2>{d.servicesTitle}</h2><p>{d.servicesBody}</p></Reveal><div className="services-grid">{d.services.map(([title,body],i)=>{const Icon=serviceIcons[i];return <Reveal className={`service service-${i}`} delay={i*.035} key={title}><Icon size={27}/><h3>{title}</h3><p>{body}</p></Reveal>})}</div></section>
+    <section className="section services-section" id="services"><Reveal className="services-header"><h2>{d.servicesTitle}</h2><p>{d.servicesBody}</p></Reveal><div className="services-grid">{d.services.map(([title,body],i)=>{const Icon=serviceIcons[i];return <Reveal className="service" delay={i*.035} key={title}><span className="service-icon"><Icon size={25}/></span><h3>{title}</h3><p>{body}</p></Reveal>})}</div></section>
 
     <section className="section bilingual-section"><Reveal className="bilingual-copy"><p className="eyebrow">English + Español</p><h2>{d.bilingualTitle}</h2><p>{d.bilingualBody}</p></Reveal><Reveal className="bilingual-visual" delay={.1}><BilingualDemo d={d}/></Reveal></section>
 
