@@ -3,7 +3,7 @@ export const isLocale = (value: string): value is Locale => value === "es" || va
 
 const es = {
   metaTitle:"Diseño y rediseño web bilingüe", metaDescription:"Transformamos páginas antiguas en sitios modernos, rápidos y bilingües que generan confianza y oportunidades.",
-  nav:["Inicio","Servicios","Proceso","Antes / Después","Proyectos","Nosotros","Contacto"], proposal:"Solicitar propuesta",
+  nav:["Inicio","Servicios","Proceso","Antes / Después","Proyectos","Contacto"], proposal:"Solicitar propuesta",
   heroKicker:"Diseño web para negocios que están creciendo", heroTitle:"Transformamos páginas antiguas en experiencias digitales que venden.", heroBody:"Sitios modernos y rápidos que conectan con clientes en inglés y español.", heroPrimary:"Transformar mi web", heroSecondary:"Ver antes y después",
   trust:["Diseño personalizado","Inglés + Español","Responsive","Optimizado para Google"],
   problemTitle:"¿Tu página todavía representa a tu negocio?", problemBody:"Una web desactualizada no solo se ve antigua. También hace más difícil que tus clientes confíen, encuentren lo que necesitan y te contacten.", problems:["Diseño que perdió vigencia","La versión móvil cuesta usarla","La información no se encuentra","Carga lenta y poca visibilidad","Solo comunica en un idioma","No convierte visitas en consultas"],
@@ -19,7 +19,7 @@ const es = {
 };
 const en: typeof es = {
   metaTitle:"Bilingual web design and redesign", metaDescription:"We turn outdated websites into modern, fast, bilingual experiences built to earn trust and create opportunities.",
-  nav:["Home","Services","Process","Before / After","Work","About","Contact"], proposal:"Request a proposal",
+  nav:["Home","Services","Process","Before / After","Work","Contact"], proposal:"Request a proposal",
   heroKicker:"Web design for growing businesses", heroTitle:"We turn outdated websites into digital experiences that sell.", heroBody:"Modern, fast websites that connect with customers in English and Spanish.", heroPrimary:"Transform my website", heroSecondary:"See before and after",
   trust:["Custom design","English + Spanish","Responsive","Google-ready"],
   problemTitle:"Does your website still represent your business?", problemBody:"An outdated website does more than look old. It makes it harder for customers to trust you, find answers, and get in touch.", problems:["A design past its prime","A frustrating mobile experience","Important details are buried","Slow load times and low visibility","Only speaks one language","Visits do not become inquiries"],

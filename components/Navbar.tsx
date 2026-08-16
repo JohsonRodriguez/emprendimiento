@@ -8,7 +8,7 @@ import type { Dictionary, Locale } from "@/lib/content";
 export function Navbar({ locale, d }: { locale: Locale; d: Dictionary }) {
   const [scrolled, setScrolled] = useState(false); const [open, setOpen] = useState(false); const { scrollY } = useScroll();
   useMotionValueEvent(scrollY, "change", (v) => setScrolled(v > 24));
-  const ids = ["top","services","process","before-after","work","about","contact"];
+  const ids = ["top","services","process","before-after","work","contact"];
   return <header className={`navbar ${scrolled ? "scrolled" : ""}`}><div className="nav-inner">
     <Link href={`/${locale}`} className="logo" aria-label="Nueva Web home"><span>N</span>Nueva Web</Link>
     <nav className="desktop-nav" aria-label="Primary navigation">{d.nav.map((item,i)=><a key={item} href={`#${ids[i]}`}>{item}</a>)}</nav>
