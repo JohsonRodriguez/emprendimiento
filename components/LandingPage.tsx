@@ -25,8 +25,6 @@ export function LandingPage({locale}:{locale:Locale}){const d=dictionaries[local
 
     <section className="section results-section"><Reveal><h2>{d.resultsTitle}</h2></Reveal><div className="results-orbit"><div className="result-core"><Browser size={36}/><span>Nueva Web</span></div>{d.results.map((x,i)=><Reveal className={`result-chip chip-${i}`} delay={i*.04} key={x}><Check size={17}/>{x}</Reveal>)}</div></section>
 
-    <section className="section why-section" id="about"><Reveal className="why-intro"><h2>{d.whyTitle}</h2><p>{d.whyBody}</p></Reveal><div className="why-list">{d.why.map(([title,body],i)=><Reveal className="why-item" delay={i*.05} key={title}><span>{String(i+1).padStart(2,"0")}</span><div><h3>{title}</h3><p>{body}</p></div></Reveal>)}</div></section>
-
     <section className="section cta-section"><Reveal><h2>{d.ctaTitle}</h2><p>{d.ctaBody}</p><div><a className="button light" href="#contact">{d.ctaPrimary}<ArrowRight size={18}/></a><a className="text-link light-link" href="#work">{d.ctaSecondary}<ArrowDownRight size={18}/></a></div></Reveal></section>
 
     <section className="section contact-section" id="contact"><Reveal className="contact-copy"><h2>{d.contactTitle}</h2><p>{d.contactBody}</p><a href="mailto:hello@nuevaweb.studio">hello@nuevaweb.studio</a></Reveal><Reveal className="contact-form-wrap" delay={.08}><ContactForm d={d}/></Reveal></section>
