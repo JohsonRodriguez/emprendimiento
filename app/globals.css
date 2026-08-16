@@ -145,3 +145,6 @@ footer{margin-top:0}
 footer{max-width:none;padding-left:max(var(--gutter),calc((100vw - var(--container))/2 + var(--gutter)));padding-right:max(var(--gutter),calc((100vw - var(--container))/2 + var(--gutter)));background:linear-gradient(118deg,#070a09 0%,#0b1713 44%,#0f7156 125%);color:#fff;border-top:0}
 footer>div>p{color:rgba(255,255,255,.74)}footer nav{color:rgba(255,255,255,.86)}footer nav a:hover{color:#fff}.footer-meta{color:rgba(255,255,255,.66);border-color:rgba(255,255,255,.18)}.footer-logo{color:#fff}
 @media(max-width:767px){footer{padding-left:1.25rem;padding-right:1.25rem;background:linear-gradient(145deg,#070a09 0%,#0a1a14 55%,#0f7156 145%)}}
+
+/* Tablet hero: remove the stretched full-viewport row that created dead space below the logo. */
+@media(min-width:768px) and (max-width:1050px){.hero{min-height:auto;align-items:start;padding-top:6.5rem;padding-bottom:3.5rem;gap:1.5rem}.hero-visual{margin-top:0}}
