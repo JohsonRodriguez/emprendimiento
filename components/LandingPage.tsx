@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDownRight, ArrowRight, Browser, Check, Code, DeviceMobile, Gauge, GlobeHemisphereWest, MagnifyingGlass, PaintBrush, ShieldCheck, Wrench } from "@phosphor-icons/react/dist/ssr";
+import { ArrowDownRight, ArrowRight, Browser, Check, DeviceMobile, Gauge, GlobeHemisphereWest, MagnifyingGlass, PaintBrush, ShieldCheck, Wrench } from "@phosphor-icons/react/dist/ssr";
 import { dictionaries, type Locale } from "@/lib/content";
 import { assetPath } from "@/lib/assets";
 import { Navbar } from "./Navbar"; import { Reveal } from "./Reveal"; import { BeforeAfterSlider } from "./BeforeAfterSlider"; import { BilingualDemo } from "./BilingualDemo"; import { ContactForm } from "./ContactForm";
