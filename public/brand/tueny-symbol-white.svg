@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Tueny symbol">
+<title>Tueny Symbol</title>
+<defs>
+  <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#11A36A"/>
+    <stop offset="0.52" stop-color="#087A55"/>
+    <stop offset="1" stop-color="#04543F"/>
+  </linearGradient>
+  <linearGradient id="gray" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#747B84"/>
+    <stop offset="0.52" stop-color="#4B535D"/>
+    <stop offset="1" stop-color="#252D36"/>
+  </linearGradient>
+</defs>
+
+<!-- Exact optical construction: centered at 256,256 -->
+<g transform="translate(256 256) scale(1.06 0.82) translate(-256 -256)">
+<!-- Upper frame -->
+<g transform="translate(0 7)">
+<path d="M82 218 L82 194
+         Q82 175 96 161
+         L215 42
+         Q233 24 256 24
+         Q279 24 297 42
+         L416 161
+         Q430 175 430 194
+         L430 228"
+      fill="none" stroke="#FFFFFF" stroke-width="38"
+      stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Lower frame -->
+<g transform="translate(0 -7)">
+<path d="M82 294 L82 318
+         Q82 337 96 351
+         L215 470
+         Q233 488 256 488
+         Q279 488 297 470
+         L416 351
+         Q430 337 430 318
+         L430 284"
+      fill="none" stroke="#FFFFFF" stroke-width="38"
+      stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Internal code mark, optically centered -->
+<g transform="translate(256 256) scale(1.24 1.18) translate(-256 -256)">
+<path d="M210 204 L170 256 L210 308"
+      fill="none" stroke="#FFFFFF" stroke-width="25"
+      stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M302 204 L342 256 L302 308"
+      fill="none" stroke="#FFFFFF" stroke-width="25"
+      stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M276 194 L236 318"
+      fill="none" stroke="#FFFFFF" stroke-width="25"
+      stroke-linecap="round"/>
+</g>
+</g>
+</svg>

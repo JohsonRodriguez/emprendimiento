@@ -1,16 +1,18 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion, useMotionValueEvent, useReducedMotion, useScroll } from "motion/react";
 import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
 import type { Dictionary, Locale } from "@/lib/content";
+import { assetPath } from "@/lib/assets";
 
 export function Navbar({ locale, d }: { locale: Locale; d: Dictionary }) {
   const [scrolled, setScrolled] = useState(false); const [open, setOpen] = useState(false); const { scrollY } = useScroll(); const reduce = useReducedMotion();
   useMotionValueEvent(scrollY, "change", (v) => setScrolled(v > 24));
   const ids = ["top","services","process","before-after","work","contact"];
   return <header className={`navbar ${scrolled ? "scrolled" : ""}`}><div className="nav-inner">
-    <Link href={`/${locale}`} className="logo" aria-label="Nueva Web home"><span>N</span>Nueva Web</Link>
+    <Link href={`/${locale}`} className="logo" aria-label="Tueny home"><Image className="brand-mark" src={assetPath("/brand/tueny-symbol-master.svg")} alt="" width={34} height={34} priority/>Tueny</Link>
     <nav className="desktop-nav" aria-label="Primary navigation">{d.nav.map((item,i)=><a key={item} href={`#${ids[i]}`}>{item}</a>)}</nav>
     <div className="nav-actions"><div className="locale-switch" aria-label="Language"><Link className={locale === "es" ? "active" : ""} href="/es">ES</Link><span>/</span><Link className={locale === "en" ? "active" : ""} href="/en">EN</Link></div><a className="button primary nav-cta" href="#contact">{d.proposal}</a><button className="menu-button" onClick={()=>setOpen(!open)} aria-expanded={open} aria-label="Toggle menu">{open?<X size={24}/>:<List size={24}/>}</button></div>
   </div><AnimatePresence>{open&&<motion.nav className="mobile-nav" aria-label="Mobile navigation" initial={reduce?false:{opacity:0,transform:"translateY(-4px) scale(0.98)"}} animate={{opacity:1,transform:"translateY(0) scale(1)"}} exit={reduce?{}:{opacity:0,transform:"translateY(-4px) scale(0.98)",transition:{duration:.14,ease:[.23,1,.32,1]}}} transition={{duration:.2,ease:[.23,1,.32,1]}}>{d.nav.map((item,i)=><a onClick={()=>setOpen(false)} key={item} href={`#${ids[i]}`}>{item}</a>)}<a onClick={()=>setOpen(false)} className="button primary" href="#contact">{d.proposal}</a></motion.nav>}</AnimatePresence></header>;

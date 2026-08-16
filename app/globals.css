@@ -133,3 +133,9 @@ footer{padding-inline:var(--gutter)}.footer-meta{line-height:1.5}
 .cta-section{margin-bottom:0}
 footer{margin-top:0}
 @media(max-width:767px){.section{padding-top:5rem;padding-bottom:5rem}.section-heading{margin-bottom:2.75rem}.problem-section,.services-section{padding-top:5.5rem}.problem-header,.services-header{margin-bottom:2.75rem}.process-section{padding-top:5.5rem;padding-bottom:5.5rem}.projects{gap:4.5rem}.cta-section{margin:0 1.25rem}.contact-section{padding-top:5.5rem}footer{margin-top:0}}
+
+/* Official Tueny identity assets. */
+.logo{gap:.7rem;font-family:var(--font-urbanist),sans-serif;font-weight:400;letter-spacing:0;font-size:1.12rem}
+.logo .brand-mark{width:34px;height:34px;object-fit:contain;flex:none}
+.footer-logo{font-size:1.18rem}
+@media(max-width:420px){.logo{gap:.55rem}.logo .brand-mark{width:30px;height:30px}}
