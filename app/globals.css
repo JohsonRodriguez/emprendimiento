@@ -162,3 +162,7 @@ footer>div>p{color:rgba(255,255,255,.74)}footer nav{color:rgba(255,255,255,.86)}
 /* Keep the before/after story close to the problem and solution sections. */
 .compare-section{padding-top:3.25rem;padding-bottom:3.25rem}
 @media(max-width:767px){.compare-section{padding-top:2.75rem;padding-bottom:2.75rem}}
+
+/* Match the compact before/after rhythm in the services section. */
+.services-section{padding-top:3.25rem;padding-bottom:3.25rem}
+@media(max-width:767px){.services-section{padding-top:2.75rem;padding-bottom:2.75rem}}
