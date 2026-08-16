@@ -6,10 +6,10 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"], display: "swap", variable: "--font-geist" });
 const geistMono = Geist_Mono({ subsets: ["latin"], display: "swap", variable: "--font-geist-mono" });
 const urbanist = Urbanist({ subsets: ["latin"], display: "swap", variable: "--font-urbanist" });
-const siteUrl = "https://johsonrodriguez.github.io/emprendimiento";
+const siteUrl = "https://www.gettueny.com";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://johsonrodriguez.github.io/emprendimiento/"),
+  metadataBase: new URL("https://www.gettueny.com/"),
   title: { default: "Tueny | Diseño web bilingüe", template: "%s | Tueny" },
   description: "Diseño y rediseño de sitios web modernos, rápidos y bilingües para negocios.",
   icons: {

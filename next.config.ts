@@ -1,15 +1,13 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 
-const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
-
 const nextConfig: NextConfig = {
   output: "export",
   outputFileTracingRoot: path.join(process.cwd()),
-  basePath: isGitHubPages ? "/emprendimiento" : "",
-  assetPrefix: isGitHubPages ? "/emprendimiento/" : "",
+  basePath: "",
+  assetPrefix: "",
   env: {
-    NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/emprendimiento" : "",
+    NEXT_PUBLIC_BASE_PATH: "",
   },
   trailingSlash: true,
   images: {
